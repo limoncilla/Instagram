@@ -10,9 +10,10 @@ import UIKit
 
 class PhotosViewController: UIViewController {
 
+    @IBOutlet weak var UIPictureCell: PictureTableViewCell!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let clientId = "Put your client id here"
+        let clientId = "e05c462ebd86446ea48a5af73769b602"
         let url = NSURL(string:"https://api.instagram.com/v1/media/popular?client_id=\(clientId)")
         let request = NSURLRequest(URL: url!)
         let session = NSURLSession(
